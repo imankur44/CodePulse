@@ -1,0 +1,22 @@
+.category-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .category-table td {
+    border: 1px solid #ddd; /* Border style */
+    padding: 8px; /* Padding inside cells */
+  }
+  
+  .category-table th {
+    border: 1px solid #ddd; /* Border style */
+    padding: 8px; /* Padding inside header cells */
+  }
+  
+  .category-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternate row background color */
+  }
+
+  .list-header {
+    background-color: lightblue;
+  }

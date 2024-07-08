@@ -1,0 +1,25 @@
+.email-input-container, .password-input-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .email-input, .password-input {
+    width: calc(100% - 32px); /* Adjust based on icon size */
+    padding-right: 32px; /* Space for the icon */
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+  }
+  
+  .password-icon {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .fa-eye-slash:before {
+    content: "\f070"; /* Font Awesome eye-slash icon */
+  }
+  
