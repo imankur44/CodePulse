@@ -13,14 +13,14 @@ export class CategoryService {
   constructor(private http: HttpClient) { }
 
   addCategory(model: AddCategoryRequest): Observable<void> {
-    return this.http.post<void>('https://localhost:7125/api/categories', model);
+    return this.http.post<void>('http://localhost:5154/api/categories', model);
   }
 
   getCategory(): Observable<GetCategoryRequest[]> {
-    return this.http.get<GetCategoryRequest[]>('https://localhost:7125/api/categories');
+    return this.http.get<GetCategoryRequest[]>('http://localhost:5154/api/categories');
   }
 
   deleteCategory(model: DeleteCategoryRequest): Observable<boolean> {
-    return this.http.delete<boolean>('https://localhost:7125/api/categories/'+ model.id);
+    return this.http.delete<boolean>('http://localhost:5154/api/categories/'+ model.id);
   }
 }

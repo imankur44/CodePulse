@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class LoginService {
   private loggedIn = new BehaviorSubject<boolean>(this.hasToken());
   loggedIn$ = this.loggedIn.asObservable();
-  private baseUrl = 'https://localhost:7125/api';
+  private baseUrl = 'http://localhost:5154/api';
 
   constructor(private router: Router, private http: HttpClient) { }
 

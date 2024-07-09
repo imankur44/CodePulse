@@ -11,16 +11,16 @@ import { DeleteBlogPostRequest } from '../models/delete-blogPosts-request.model'
 export class BlogPostsService {
 
   deleteBlogPost(model: DeleteBlogPostRequest): Observable<boolean> {
-    return this.http.delete<boolean>('https://localhost:7125/api/blogPosts/'+ model.id);
+    return this.http.delete<boolean>('http://localhost:5154/api/blogPosts/'+ model.id);
   }
 
   constructor(private http: HttpClient) { }
 
   getBlogPosts(): Observable<GetBlogPostRequest[]> {
-    return this.http.get<GetBlogPostRequest[]>('https://localhost:7125/api/blogPosts');
+    return this.http.get<GetBlogPostRequest[]>('http://localhost:5154/api/blogPosts');
   }
 
   addBlogPosts(model: AddBlogPostsRequest): Observable<void>{
-    return this.http.post<void>('https://localhost:7125/api/BlogPosts', model);
+    return this.http.post<void>('http://localhost:5154/api/BlogPosts', model);
   }
 }
